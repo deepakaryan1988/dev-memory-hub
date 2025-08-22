@@ -1,0 +1,75 @@
+{
+  "name": "dev-memory-hub",
+  "version": "0.1.0",
+  "description": "A ByteRover alternative - open-source memory layer for coding agents that persists context across sessions and teams",
+  "main": "packages/core/dist/index.js",
+  "scripts": {
+    "dev": "npm run dev:core",
+    "dev:core": "npm run build:core -- --watch",
+    "dev:cli": "npm run build:cli -- --watch",
+    "dev:web": "cd packages/web && npm run dev",
+    "build": "npm run build:core && npm run build:cli && npm run build:web",
+    "build:core": "cd packages/core && npm run build",
+    "build:cli": "cd packages/cli && npm run build",
+    "build:web": "cd packages/web && npm run build",
+    "test": "npm run test:core && npm run test:cli",
+    "test:core": "cd packages/core && npm test",
+    "test:cli": "cd packages/cli && npm test",
+    "test:watch": "npm run test:core -- --watch",
+    "test:coverage": "npm run test:core -- --coverage",
+    "clean": "npm run clean:core && npm run clean:cli && npm run clean:web",
+    "clean:core": "cd packages/core && npm run clean",
+    "clean:cli": "cd packages/cli && npm run clean",
+    "clean:web": "cd packages/web && npm run clean",
+    "setup": "npm install && npm run build",
+    "lint": "npm run lint:core && npm run lint:cli",
+    "lint:core": "cd packages/core && npm run lint",
+    "lint:cli": "cd packages/cli && npm run lint",
+    "format": "npm run format:core && npm run format:cli",
+    "format:core": "cd packages/core && npm run format",
+    "format:cli": "cd packages/cli && npm run format",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "ai",
+    "memory",
+    "coding-agents",
+    "developer-tools",
+    "ide-extensions",
+    "open-source",
+    "byteRover-alternative"
+  ],
+  "author": "Deepak Kumar <deepakaryan1988@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/deepakaryan1988/dev-memory-hub.git"
+  },
+  "bugs": {
+    "url": "https://github.com/deepakaryan1988/dev-memory-hub/issues"
+  },
+  "homepage": "https://github.com/deepakaryan1988/dev-memory-hub#readme",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,jsx}": [
+      "npm run format",
+      "npm run lint"
+    ],
+    "*.{md,json}": [
+      "npm run format"
+    ]
+  }
+}
