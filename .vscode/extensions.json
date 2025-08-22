@@ -1,0 +1,23 @@
+{
+  "recommendations": [
+    "ms-vscode.vscode-typescript-next",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "ms-vscode.vscode-json",
+    "bradlc.vscode-tailwindcss",
+    "ms-vscode.vscode-node-debug2",
+    "ms-vscode.vscode-jest",
+    "ms-vscode.vscode-npm-script",
+    "ms-vscode.vscode-git",
+    "ms-vscode.vscode-github",
+    "ms-vscode.vscode-docker",
+    "ms-kubernetes-tools.vscode-kubernetes-tools",
+    "hashicorp.terraform",
+    "ms-vscode.vscode-markdown",
+    "yzhang.markdown-all-in-one",
+    "ms-vscode.vscode-yaml",
+    "redhat.vscode-yaml",
+    "ms-vscode.vscode-js-debug",
+    "ms-vscode.vscode-js-debug-companion"
+  ]
+}
