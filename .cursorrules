@@ -1,0 +1,103 @@
+# Dev Memory Hub - AI Behavior and Project Intelligence
+
+## Project Overview
+Dev Memory Hub is an open-source alternative to ByteRover that provides a persistent memory layer for AI coding agents. This project aims to democratize AI memory technology by making it free, open-source, and self-hostable.
+
+## Response Format Requirements
+Every response MUST follow this structured format:
+
+### 1. Analysis
+- Clear understanding of the problem/request
+- Identification of key challenges and constraints
+- Context from relevant memory bank files
+
+### 2. Todo List
+- Prioritized tasks with checkboxes
+- Effort estimates and dependencies
+- Clear success criteria for each task
+
+### 3. Execution Plan
+- Step-by-step approach with rollback considerations
+- Technical implementation details
+- Risk assessment and mitigation strategies
+
+### 4. Questions
+- Clarifying questions to ensure alignment
+- Technical decisions that need human input
+- Scope and priority clarifications
+
+## Memory Bank Integration
+- **ALWAYS** read and reference memory bank files
+- **ALWAYS** update relevant memory bank files after significant changes
+- **ALWAYS** maintain context across sessions using the memory bank
+- **NEVER** make assumptions without checking memory bank context
+
+## Quality Standards
+- **Production-Ready Code**: No quick fixes or prototypes
+- **Security First**: No hardcoded secrets, proper authentication
+- **Documentation**: Self-documenting code with clear intent
+- **Testing**: Comprehensive test coverage for all functionality
+- **Performance**: Optimize for both functionality and user experience
+
+## Architecture Principles
+- **Modularity**: Clear separation of concerns and loose coupling
+- **Extensibility**: Plugin architecture for future enhancements
+- **Scalability**: Horizontal scaling and performance considerations
+- **Maintainability**: Clean interfaces and comprehensive documentation
+
+## Development Workflow
+1. **Problem Analysis**: Understand requirements and constraints
+2. **Solution Design**: Propose architectural approaches
+3. **Implementation Plan**: Create detailed execution plan
+4. **Questions**: Ask clarifying questions for alignment
+5. **Execution**: Implement with human oversight
+6. **Documentation**: Update memory bank and project docs
+
+## Technology Stack
+- **Backend**: Node.js + TypeScript
+- **Database**: SQLite (local) + PostgreSQL (cloud)
+- **Frontend**: React + Next.js
+- **Testing**: Jest + comprehensive test coverage
+- **CI/CD**: GitHub Actions
+
+## Open Source Focus
+- **Community Driven**: Design for community adoption and contribution
+- **Documentation**: Comprehensive guides for new contributors
+- **Examples**: Clear examples and use cases for users
+- **Contributing**: Clear guidelines for community contributions
+
+## Memory Bank Files to Reference
+- `memory-bank/projectbrief.md` - Project foundation and goals
+- `memory-bank/activeContext.md` - Current work focus and status
+- `memory-bank/working-relationship.md` - AI collaboration patterns
+- `memory-bank/progress.md` - What works and what's left to build
+- `memory-bank/systemPatterns.md` - Architecture and design patterns
+- `memory-bank/techContext.md` - Technologies and development setup
+
+## Communication Preferences
+- **Structured Responses**: Always use the required format
+- **Visual Elements**: Use checkboxes, lists, and clear organization
+- **Context Awareness**: Reference project history and decisions
+- **Proactive Questions**: Ask clarifying questions to prevent misunderstandings
+
+## Success Metrics
+- **Code Quality**: >90% test coverage, zero critical vulnerabilities
+- **Performance**: <100ms response time, support for 100K+ memories
+- **Documentation**: Complete API documentation and user guides
+- **Community**: Active GitHub discussions and contributions
+
+## Risk Mitigation
+- **Scope Creep**: Focus on core MVP, defer advanced features
+- **Complexity**: Modular approach with clear interfaces
+- **Performance**: Comprehensive testing and optimization
+- **Security**: Regular security audits and best practices
+
+## Next Steps Tracking
+- **Always** reference the current phase from activeContext.md
+- **Always** update progress.md after completing significant work
+- **Always** maintain clear next steps and priorities
+- **Always** consider roadmap alignment and career objectives
+
+---
+
+This file defines how AI assistants should behave when working on the Dev Memory Hub project. It ensures consistent, high-quality collaboration and maintains project context across sessions.
